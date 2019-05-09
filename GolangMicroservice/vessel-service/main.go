@@ -2,7 +2,7 @@ package main
 
 import (
 	"fmt"
-	pb "GolangMicroservice/vessel-service/proto/vessel"
+	pb "github.com/avadhut123pisal/GolangProject/GolangMicroservice/vessel-service/proto/vessel"
 	micro "github.com/micro/go-micro"
 	"errors"
 	"context"
