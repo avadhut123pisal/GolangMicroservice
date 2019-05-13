@@ -2,6 +2,7 @@ package main
 
 import (
 	pb "github.com/avadhut123pisal/GolangMicroservice/consignment-service-micro/proto/consignment"
+  // pb "GolangMicroservice/consignment-service-micro/proto/consignment"
 	// "google.golang.org/grpc"
 	"log"
 	"context"
@@ -13,7 +14,6 @@ import (
 )
 
 const (
-	address = "localhost:8082"
 	fileName = "consignment.json"
 )
 

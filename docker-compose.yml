@@ -1,0 +1,26 @@
+version: '3.1'
+
+services:
+  vessel-service:
+    build: ./vessel-service
+    ports:
+      - 50051:50051
+    environment:
+      MICRO_ADDRESS: ":50051"
+      DB_HOST: "datastore:27017"
+      
+  consignment-service:
+    build: ./consignment-service-micro
+    ports:
+      - 50052:50051
+    environment:
+       MICRO_ADDRESS: ":50051"
+       DB_HOST: "datastore:27017"
+       
+  consignment-cli:
+    build: ./consignment-micro-cli
+              
+  datastore:
+     image: mongo
+     ports:
+       - 27017:27017            
