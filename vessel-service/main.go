@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 	"fmt"
-	"github.com/avadhut123pisal/GolangMicroservice/vessel-service/proto/vessel"
+	pb "github.com/avadhut123pisal/GolangMicroservice/vessel-service/proto/vessel"
 	// pb "GolangMicroservice/vessel-service/proto/vessel"
 	micro "github.com/micro/go-micro"
 	"log"
